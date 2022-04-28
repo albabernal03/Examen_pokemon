@@ -84,3 +84,6 @@ plt.axhline(df1['TOTAL'].mean(),color='red',linestyle='dashed')
 plt.show()
 
 ```
+## Conclusión
+
+Con este análisis podemos perfectamente distribuir los 6 mejores pokemons entre los dos entrenadores
