@@ -75,5 +75,12 @@ plt.xlabel('Tipos')
 plt.ylabel('Porcentaje')
 plt.pie(datos['Type 1'].value_counts(), labels=datos['Type 1'].value_counts().index, autopct='%1.1f%%')
 plt.show()
+#Graficamos los pokemons mas fuertes según tipo
+plt.figure(figsize=(12,6))
+top_types=datos['TYPE 1'].value_counts()[:6] #nos muestra los 6 pokemons más fuerte
+df1=datos[datos['TYPE 1'].isin(top_types.index)] #coge los 6 de mayor valor
+sns.swarmplot(x='TYPE 1',y='TOTAL',data=df1,hue='LEGENDARY') 
+plt.axhline(df1['TOTAL'].mean(),color='red',linestyle='dashed')
+plt.show()
 
 ```
