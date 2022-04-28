@@ -1,7 +1,7 @@
 # Examen_pokemon
 
 ## Link repositorio
-
+https://github.com/albabernal03/Examen_pokemon/blob/main/README.md
 ## Analisis dataset
 
 ```
